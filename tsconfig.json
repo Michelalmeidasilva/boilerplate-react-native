@@ -2,15 +2,20 @@
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {      "*": ["src/*"],
+    
+    "paths": { "*": ["src/*"],
       "tests": ["tests/*"],
+      "@tests/utils": ["tests/utils/*"],
       "@commons/*": ["src/commons/*"],
-      "@components/*": ["src/commons/ui/components/*"],
-      "@constants/*": ["src/commons/constants/*"],
-      "@helpers/*": ["src/commons/helpers/*"],
-      "@external/*": ["src/commons/external/*"],
+      "@commons/components/*": ["src/commons/ui/components/*"],
+      "@commons/constants/*": ["src/commons/constants/*"],
+      "@commons/helpers/*": ["src/commons/helpers/*"],
+      "@commons/external/*": ["src/commons/external/*"],
+      "@commons/ui/*": ["src/commons/ui/*"],
       "@modules/*": ["src/modules/*"],
-      "@ui/*": ["src/commons/ui/*"]
+      "@core/libraries/*": ["src/core/libraries/*"],
+      "@core/navigation/*": ["src/core/libraries/*"],
+      "@core/*": ["src/core/*"]
     },
   }
 }
