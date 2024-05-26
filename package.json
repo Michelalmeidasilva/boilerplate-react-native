@@ -11,8 +11,13 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@shopify/flash-list": "^1.6.4",
+    "@tanstack/react-query": "^5.39.0",
+    "axios": "^1.7.2",
     "react": "18.2.0",
-    "react-native": "0.74.1"
+    "react-native": "0.74.1",
+    "react-native-fast-image": "^8.6.3",
+    "react-native-mmkv-storage": "^0.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
