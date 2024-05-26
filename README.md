@@ -1,5 +1,3 @@
-Here's a basic README.md file you can use as a boilerplate for your project:
-
 ---
 
 # Galileu
