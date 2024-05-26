@@ -2,14 +2,23 @@ import React, {createContext, useState, useContext, ReactNode} from 'react';
 
 import {DarkTheme, LightTheme} from '@commons/ui/theme';
 
-const ThemeContext = createContext({});
+export interface ThemeProviderValues {
+  theme: string;
+  toggleTheme: () => void;
+  colors: {[key: string]: string};
+}
+const ThemeContext = createContext({} as ThemeProviderValues);
 
 interface ThemeProviderProps {
   children: ReactNode;
+  defaultTheme: 'light' | 'dark';
 }
 
-export const ThemeProvider = ({children}: ThemeProviderProps) => {
-  const [theme, setTheme] = useState('light'); // Default theme is light
+export const ThemeProvider = ({
+  defaultTheme = 'light',
+  children,
+}: ThemeProviderProps) => {
+  const [theme, setTheme] = useState(defaultTheme); // Default theme is light
 
   const toggleTheme = () => {
     setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));

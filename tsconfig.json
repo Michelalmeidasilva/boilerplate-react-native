@@ -5,17 +5,10 @@
     
     "paths": { "*": ["src/*"],
       "tests": ["tests/*"],
-      "@tests/utils": ["tests/utils/*"],
       "@commons/*": ["src/commons/*"],
-      "@commons/components/*": ["src/commons/ui/components/*"],
-      "@commons/constants/*": ["src/commons/constants/*"],
-      "@commons/helpers/*": ["src/commons/helpers/*"],
-      "@commons/external/*": ["src/commons/external/*"],
-      "@commons/ui/*": ["src/commons/ui/*"],
       "@modules/*": ["src/modules/*"],
-      "@core/libraries/*": ["src/core/libraries/*"],
-      "@core/navigation/*": ["src/core/libraries/*"],
-      "@core/*": ["src/core/*"]
+      "@core/*": ["src/core/*"],
+      "@providers/*": ["src/providers/"]
     },
   }
 }

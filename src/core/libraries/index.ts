@@ -33,3 +33,14 @@ export {FlashList, AnimatedFlashList};
 /** Library to environment: see docs for configure natives .env at https://github.com/lugg/react-native-config*/
 import Config from 'react-native-config';
 export {Config};
+
+/** Library for tests */
+import {
+  render,
+  fireEvent,
+  userEvent,
+  RenderOptions,
+} from '@testing-library/react-native';
+
+export {render, fireEvent, userEvent};
+export type {RenderOptions};
