@@ -1,6 +1,3 @@
-/* eslint-disable testing-library/no-debugging-utils */
-/* eslint-disable testing-library/render-result-naming-convention */
-
 import React from 'react';
 
 import {ThemeProvider, useTheme} from '../ThemeProvider';
